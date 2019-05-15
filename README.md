@@ -6,7 +6,7 @@ Iterm2 works on Macs with macOS 10.12 or newer.
 
 ## Install
 
-1. Make cosmic.sh executable
+1. Make install_cosmic_terminal.sh executable
 ```
 chmod +x install_cosmic_terminal.sh
 ```
@@ -28,9 +28,8 @@ curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/in
 
 or
 
-curl -s 
 ```
-https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/uninstall_cosmic_treminal.sh
+curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/uninstall_cosmic_treminal.sh
 ```
 
 ## Tested OS
