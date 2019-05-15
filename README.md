@@ -16,7 +16,7 @@ chmod +x install_cosmic_terminal.sh
 ./install_cosmic_terminal.sh
 ```
 
-or thanks to [Aidan](https://github.com/cyclotron3k)
+or (thanks to [Aidan](https://github.com/cyclotron3k))
 
 ```
 curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/install_cosmic_terminal.sh | bash
@@ -24,7 +24,10 @@ curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/in
 
 ## Uninstall
 
-1. run the uninstall_cosmic_terminal.sh
+1. run
+```
+./uninstall_cosmic_terminal.sh
+```
 
 or
 
