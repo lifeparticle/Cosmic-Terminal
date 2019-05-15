@@ -1,13 +1,10 @@
 
 #!/bin/sh
 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/uninstall.sh)"
+
 brew cask uninstall iterm2
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
 
-rm ~/.zshrc
-brew uninstall zsh --force
-
-uninstall_oh_my_zsh
-
-brew uninstall powerlevel9k
+chsh -s /bin/bash
