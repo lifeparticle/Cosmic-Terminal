@@ -1,6 +1,6 @@
 # Cosmic-Terminal
 
-This script will install [iTerm2](https://github.com/gnachman/iTerm2), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh). Also it will download [material-design-colors](https://github.com/MartinSeeler/iterm2-material-design) and [powerlevel9k](https://github.com/bhilburn/powerlevel9k)
+This script will install [iTerm2](https://github.com/gnachman/iTerm2), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and it will download [material-design-colors](https://github.com/MartinSeeler/iterm2-material-design) and [powerlevel9k](https://github.com/bhilburn/powerlevel9k)
 
 ## Prerequisite
 
@@ -34,7 +34,7 @@ curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/in
 or
 
 ```
-curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/uninstall_cosmic_treminal.sh
+curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/uninstall_cosmic_treminal.sh | bash
 ```
 
 ## Tested OS
