@@ -19,6 +19,8 @@ confirm "Are you sure you want to uninstall itemr2?" && brew cask uninstall iter
 
 confirm "Are you sure you want to uninstall brew?" && ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
 
+confirm "Are you sure you want to remove Fura Mono Regular Nerd Font Complete Mono.otf?" && rm ~/Library/Fonts/Fura\ Mono\ Regular\ Nerd\ Font\ Complete\ Mono.otf
+
 
 chsh -s /bin/bash
 
