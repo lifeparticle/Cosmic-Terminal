@@ -2,6 +2,8 @@
 
 This script will install [iTerm2](https://github.com/gnachman/iTerm2), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and it will download [material-design-colors](https://github.com/MartinSeeler/iterm2-material-design), [powerlevel9k](https://github.com/bhilburn/powerlevel9k) and DroidSansMono Nerd Font from [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
+![demo](https://user-images.githubusercontent.com/1612112/58381023-1e660780-7ffc-11e9-9022-da68dbd646f3.png)
+
 ## Prerequisite
 
 Iterm2 works on Macs with macOS 10.12 or newer.
