@@ -8,12 +8,12 @@ Iterm2 works on Macs with macOS 10.12 or newer.
 
 ## Install
 
-1. Make install_cosmic_terminal.sh executable
+Make install_cosmic_terminal.sh executable
 ```
 chmod +x install_cosmic_terminal.sh
 ```
 
-2. run
+Run
 ```
 ./install_cosmic_terminal.sh
 ```
@@ -23,6 +23,26 @@ or (thanks to [Aidan](https://github.com/cyclotron3k))
 ```
 curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/install_cosmic_terminal.sh | sh
 ```
+
+### Set the theme ~/.zshrc
+```
+ZSH_THEME="powerlevel9k/powerlevel9k"
+```
+
+### Set the Font
+1. iTerm2 > Preferences > Profiles > Text Tab
+2. Click Change font
+3. Select DroidSansMono Nerd Font
+
+For more fonts
+https://github.com/ryanoasis/nerd-fonts
+
+### Set the color
+1. iTerm2 > Preferences > Profiles > Colors Tab
+2. Click Color Presets...
+3. Click Import...
+4. Choose material-design-colors.itermcolors file from Downloads folder
+5. Select the material-design-colors from the dropdown
 
 ## Uninstall
 
