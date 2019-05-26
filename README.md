@@ -44,6 +44,20 @@ https://github.com/ryanoasis/nerd-fonts
 4. Choose material-design-colors.itermcolors file from Downloads folder
 5. Select the material-design-colors from the dropdown
 
+### extra config for ~/.zshrc
+```
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+  dir
+  custom_javascript
+  vcs
+  newline
+  status
+)
+
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+```
+
 ## Uninstall
 
 1. run
