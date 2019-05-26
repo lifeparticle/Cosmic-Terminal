@@ -33,7 +33,9 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 
 ### 3. Set the Font
 3.1. iTerm2 > Preferences > Profiles > Text Tab
+
 3.2. Click Change font
+
 3.3. Select DroidSansMono Nerd Font
 
 For more fonts
@@ -41,9 +43,13 @@ https://github.com/ryanoasis/nerd-fonts
 
 ### 4. Set the color
 4.1 iTerm2 > Preferences > Profiles > Colors Tab
+
 4.2 Click Color Presets...
+
 4.3 Click Import...
+
 4.4 Choose material-design-colors.itermcolors file from Downloads folder
+
 4.5 Select the material-design-colors from the dropdown
 
 ### 5. extra config for ~/.zshrc (Optional)
