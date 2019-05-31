@@ -28,6 +28,7 @@ curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/in
 
 ### 2. Set the theme ~/.zshrc
 ```
+vim ~/.zshrc
 ZSH_THEME="powerlevel9k/powerlevel9k"
 ```
 
