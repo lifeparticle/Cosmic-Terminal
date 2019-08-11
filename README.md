@@ -82,6 +82,7 @@ curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/un
 
 ## Tested OS
 1. macOS Sierra (version 10.12.6)
+2. macOS High Sierra (version 10.13.6)
 
 ## Bug Reports and Feature Requests
 Please create an issue with as much information you can. Thank you.
