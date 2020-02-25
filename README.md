@@ -67,6 +67,18 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 ```
 
+### 6. Misc
+
+```
+# if you're using bash
+$ echo 'export PATH="/usr/local/a/b/c:$PATH"' >> ~/.bashrc
+$ source ~/.bashrc
+
+# or if you're using zsh
+$ echo 'export PATH="/usr/local/a/b/c:$PATH"' >> ~/.zshrc
+$ source ~/.zshrc
+```
+
 ## Uninstall
 
 1. run
