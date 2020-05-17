@@ -30,6 +30,7 @@ curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/in
 ```
 vim ~/.zshrc
 ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_MODE='nerdfont-complete'
 ```
 
 ### 3. Set the Font
