@@ -71,6 +71,10 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 ### 6. Misc
 
 ```
+which zsh
+```
+
+```
 # if you're using bash
 $ echo 'export PATH="/usr/local/a/b/c:$PATH"' >> ~/.bashrc
 $ source ~/.bashrc
@@ -78,6 +82,12 @@ $ source ~/.bashrc
 # or if you're using zsh
 $ echo 'export PATH="/usr/local/a/b/c:$PATH"' >> ~/.zshrc
 $ source ~/.zshrc
+```
+
+Check which shell you're using.
+
+```
+echo $0
 ```
 
 ## Uninstall
@@ -94,8 +104,7 @@ curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/un
 ```
 
 ## Tested OS
-1. macOS Sierra (version 10.12.6)
-2. macOS High Sierra (version 10.13.6)
+1. macOS Big Sur (Version 11.3)
 
 ## Bug Reports and Feature Requests
 Please create an issue with as much information you can. Thank you.
