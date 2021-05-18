@@ -70,6 +70,8 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
 ### 6. Misc
 
+https://unix.stackexchange.com/questions/71253/what-should-shouldnt-go-in-zshenv-zshrc-zlogin-zprofile-zlogout#:~:text=zprofile%20is%20meant%20as%20an,the%20setopt%20and%20unsetopt%20commands.
+
 ```
 which zsh
 ```
