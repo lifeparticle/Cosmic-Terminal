@@ -16,18 +16,18 @@ chmod +x install_cosmic_terminal.sh
 ```
 
 Run
-```
+```shell
 ./install_cosmic_terminal.sh
 ```
 
 or (thanks to [Aidan](https://github.com/cyclotron3k))
 
-```
+```shell
 curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/install_cosmic_terminal.sh | sh
 ```
 
 ### 2. Set the theme ~/.zshrc
-```
+```shell
 vim ~/.zshrc
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE='nerdfont-complete'
@@ -55,7 +55,7 @@ https://github.com/ryanoasis/nerd-fonts
 4.5 Select the material-design-colors from the dropdown
 
 ### 5. extra config for ~/.zshrc (Optional)
-```
+```shell
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
   dir
   custom_javascript
@@ -78,7 +78,7 @@ which zsh
 
 [understanding-path](https://github.com/rbenv/rbenv#understanding-path)
 
-```
+```shell
 # if you're using bash
 $ echo 'export PATH="/usr/local/a/b/c:$PATH"' >> ~/.bashrc
 $ source ~/.bashrc
@@ -90,21 +90,29 @@ $ source ~/.zshrc
 
 Check which shell you're using.
 
-```
+```shell
 echo $0
 ```
 
 ## Uninstall
 
 1. run
-```
+```shell
 ./uninstall_cosmic_terminal.sh
 ```
 
 or
 
-```
+```shell
 curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/uninstall_cosmic_treminal.sh | sh
+```
+
+
+## Fig
+
+```shell
+brew install fig
+fig
 ```
 
 ## Tested OS
