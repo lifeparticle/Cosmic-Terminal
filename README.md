@@ -8,9 +8,9 @@ This script will install [iTerm2](https://github.com/gnachman/iTerm2), [oh-my-zs
 
 Iterm2 works on Macs with macOS 10.12 or newer.
 
-## 1. Install
+## Install
 
-Make install_cosmic_terminal.sh executable
+### 1. Make install_cosmic_terminal.sh executable
 ```
 chmod +x install_cosmic_terminal.sh
 ```
@@ -82,7 +82,7 @@ or
 curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/uninstall_cosmic_treminal.sh | sh
 ```
 
-## 6. Troubleshooting
+## Troubleshooting
 
 ### Tested OS
 - macOS Big Sur (Version 11.3)

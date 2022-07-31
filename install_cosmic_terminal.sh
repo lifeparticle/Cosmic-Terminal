@@ -6,19 +6,14 @@
 # /dev/null The null device is typically used for disposing of unwanted output streams of a process
 # need to handle netowrk failures for curl requests
 
-
 install() {
 	which -s $1
 	if [[ $? != 0 ]]
 	then
-		echo '-----------------------'
 		echo 'installing '$1
-		echo '-----------------------'
 		true
 	else
-		echo '-----------------------'
 		echo $1' already installed'
-		echo '-----------------------'
 		false
 	fi
 }
@@ -27,39 +22,46 @@ xcode-select -p 1> /dev/null
 
 if [[ $? != 0 ]]
 then
-	echo '-----------------------'
-	echo 'installing xcode'
-	echo '-----------------------'
+	echo 'installing xcode...'
 	xcode-select --install
 	read -p "Press enter after you have installed xcode"
 else
-	echo '-----------------------'
 	echo 'xcode already installed'
-	echo '-----------------------'
 fi
 
+install "brew" && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+#eval "$(/opt/homebrew/bin/brew shellenv)"
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/genesis/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
+mdfind "kMDItemCFBundleIdentifier == com.googlecode.iterm2" > /dev/null
+if [[ $? != 0 ]]
+then
+	brew install --cask iterm2
+else
+	echo 'iterm2 already installed'
+fi
 
-brew install --cask iterm2
-
+echo 'downloading material-design-colors...'
 curl -s https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors > $HOME/Downloads/material-design-colors.itermcolors
-
 install "zsh" && brew install zsh
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" &
+if [ ! -d $HOME/.oh-my-zsh ]
+then
+  echo 'installing oh-my-zsh ...'
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+else
+	echo 'oh-my-zsh already installed'
+fi
 
-wait
-echo "copy powerlevel9k"
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+if [ ! -d $HOME/.oh-my-zsh/custom/themes/powerlevel9k ]
+then
+  echo 'installing powerlevel9k...'
+  git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+else
+	echo 'powerlevel9k already installed'
+fi
 
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
-
-# fallback
 chsh -s /bin/zsh
-
-
-brew install fig
+install "fig" && brew install fig
 fig
