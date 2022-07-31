@@ -42,13 +42,10 @@ else
 fi
 
 
-# install "brew" && ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null
-# need to check
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/genesis/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
-    
-# brew cask install iterm2
+
 brew install --cask iterm2
 
 curl -s https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors > $HOME/Downloads/material-design-colors.itermcolors
