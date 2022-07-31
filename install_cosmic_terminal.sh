@@ -8,9 +8,7 @@
 
 
 install() {
-
 	which -s $1
-
 	if [[ $? != 0 ]]
 	then
 		echo '-----------------------'
@@ -23,7 +21,6 @@ install() {
 		echo '-----------------------'
 		false
 	fi
-
 }
 
 xcode-select -p 1> /dev/null
@@ -64,8 +61,5 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 chsh -s /bin/zsh
 
 
-
-
-
-
-
+brew install fig
+fig

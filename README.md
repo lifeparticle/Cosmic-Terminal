@@ -1,6 +1,6 @@
 # Cosmic-Terminal
 
-This script will install [iTerm2](https://github.com/gnachman/iTerm2), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and it will download [material-design-colors](https://github.com/MartinSeeler/iterm2-material-design), [powerlevel9k](https://github.com/bhilburn/powerlevel9k) and DroidSansMono Nerd Font from [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+This script will install [iTerm2](https://github.com/gnachman/iTerm2), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), [Fig](https://fig.io/) and it will download [material-design-colors](https://github.com/MartinSeeler/iterm2-material-design), [powerlevel9k](https://github.com/bhilburn/powerlevel9k) and DroidSansMono Nerd Font from [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
 ![demo](https://user-images.githubusercontent.com/1612112/58381023-1e660780-7ffc-11e9-9022-da68dbd646f3.png)
 
@@ -26,7 +26,7 @@ or (thanks to [Aidan](https://github.com/cyclotron3k))
 curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/install_cosmic_terminal.sh | sh
 ```
 
-### 2. Set the theme ~/.zshrc
+### 2. Set the theme `~/.zshrc`
 ```shell
 vim ~/.zshrc
 ZSH_THEME="powerlevel9k/powerlevel9k"
@@ -54,7 +54,8 @@ https://github.com/ryanoasis/nerd-fonts
 
 4.5 Select the material-design-colors from the dropdown
 
-### 5. extra config for ~/.zshrc (Optional)
+### 5. extra config for `~/.zshrc` (Optional)
+
 ```shell
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
   dir
@@ -66,32 +67,6 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
 
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-```
-
-### 6. Misc
-
-https://unix.stackexchange.com/questions/71253/what-should-shouldnt-go-in-zshenv-zshrc-zlogin-zprofile-zlogout#:~:text=zprofile%20is%20meant%20as%20an,the%20setopt%20and%20unsetopt%20commands.
-
-```
-which zsh
-```
-
-[understanding-path](https://github.com/rbenv/rbenv#understanding-path)
-
-```shell
-# if you're using bash
-$ echo 'export PATH="/usr/local/a/b/c:$PATH"' >> ~/.bashrc
-$ source ~/.bashrc
-
-# or if you're using zsh
-$ echo 'export PATH="/usr/local/a/b/c:$PATH"' >> ~/.zshrc
-$ source ~/.zshrc
-```
-
-Check which shell you're using.
-
-```shell
-echo $0
 ```
 
 ## Uninstall
@@ -107,16 +82,48 @@ or
 curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/uninstall_cosmic_treminal.sh | sh
 ```
 
+## 6. Troubleshooting
 
-## Fig
+### Tested OS
+- macOS Big Sur (Version 11.3)
+
+### List all available shells in macOS X:
 
 ```shell
-brew install fig
-fig
+cat /etc/shells
 ```
 
-## Tested OS
-1. macOS Big Sur (Version 11.3)
+### To see which shell you’re running:
+
+```shell
+echo $0
+```
+
+### To change to bash shell:
+
+```shell
+chsh -s /bin/bash
+```
+
+### To change to zsh shell:
+
+```shell
+chsh -s /bin/zsh
+```
+
+### [Understanding path](https://github.com/rbenv/rbenv#understanding-path)
+
+```shell
+# if you're using bash
+$ echo 'export PATH="/usr/local/a/b/c:$PATH"' >> ~/.bashrc
+$ source ~/.bashrc
+
+# or if you're using zsh
+$ echo 'export PATH="/usr/local/a/b/c:$PATH"' >> ~/.zshrc
+$ source ~/.zshrc
+```
+
+### [What should/shouldn't go in .zshenv, .zshrc, .zlogin, .zprofile, .zlogout?](https://unix.stackexchange.com/questions/71253/what-should-shouldnt-go-in-zshenv-zshrc-zlogin-zprofile-zlogout#:~:text=zprofile%20is%20meant%20as%20an,the%20setopt%20and%20unsetopt%20commands)
 
 ## Bug Reports and Feature Requests
 Please create an issue with as much information you can. Thank you.
