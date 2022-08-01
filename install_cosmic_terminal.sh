@@ -55,12 +55,12 @@ else
 	echo 'oh-my-zsh already installed'
 fi
 
-if [ ! -d $HOME/.oh-my-zsh/custom/themes/powerlevel9k ]
+if [ ! -d $HOME/.oh-my-zsh/custom/themes/powerlevel10k ]
 then
-  echo 'installing powerlevel9k...'
-  git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+  echo 'installing powerlevel10k...'
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
 else
-	echo 'powerlevel9k already installed'
+	echo 'powerlevel10k already installed'
 fi
 
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
