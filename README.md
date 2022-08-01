@@ -89,6 +89,13 @@ gitdeleteall() {
 }
 ```
 
+```shell
+alias gcm="git checkout main";
+alias gs="git status";
+alias gp="git pull";
+alias gf="git fetch";
+```
+
 ## Uninstall
 
 1. run
