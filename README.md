@@ -75,6 +75,20 @@ function gitall() {
 
 [Source](https://stackoverflow.com/questions/34340575/zsh-alias-with-parameter)
 
+**Delete both local and remote branch.**
+
+```shell
+gitdeleteall() {
+    if [ "$1" != "" ]
+    then
+        git branch -D "$1"
+        git push origin --delete "$1"
+    else
+        echo "provide branch name"
+    fi
+}
+```
+
 ## Uninstall
 
 1. run
