@@ -10,7 +10,7 @@ Iterm2 works on Macs with macOS 10.12 or newer.
 
 ## Install
 
-### 1. Make install_cosmic_terminal.sh executable
+### 1. Make `install_cosmic_terminal.sh` executable
 ```
 chmod +x install_cosmic_terminal.sh
 ```

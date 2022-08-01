@@ -43,7 +43,9 @@ fi
 
 echo 'downloading material-design-colors...'
 curl -s https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors > $HOME/Downloads/material-design-colors.itermcolors
-install "zsh" && brew install zsh
+
+# comes with mac now??
+# install "zsh" && brew install zsh
 
 if [ ! -d $HOME/.oh-my-zsh ]
 then
@@ -62,6 +64,10 @@ else
 fi
 
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+
+# chk this
 chsh -s /bin/zsh
+
+
 install "fig" && brew install fig
 fig
