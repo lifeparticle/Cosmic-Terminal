@@ -28,7 +28,7 @@ or (thanks to [Aidan](https://github.com/cyclotron3k))
 curl -s https://raw.githubusercontent.com/lifeparticle/Cosmic-Terminal/master/install_cosmic_terminal.sh | sh
 ```
 
-### 2. Set the theme `~/.zshrc`
+### 2. Set the theme in `~/.zshrc`
 
 ```shell
 vim ~/.zshrc
@@ -58,7 +58,7 @@ https://github.com/ryanoasis/nerd-fonts
 
 4.5 Select the material-design-colors from the dropdown
 
-### 5. Alias
+### 5. Set Aliases in `~/.zshrc`
 
 ```shell
 function gitall() {
@@ -74,6 +74,22 @@ function gitall() {
 ```
 
 [Source](https://stackoverflow.com/questions/34340575/zsh-alias-with-parameter)
+
+### 6. Status bar
+
+6.1. iTerm2 > Preferences > Profiles > Session tab -> Status bar enabled [check]
+6.1.1 Configure status bar
+6.1.2 Advanced - Background color -> Use the color picker and choose the backgroung color of the terminal
+6.2. iTerm2 > Preferences > Appearance > Status bar locatio [Bottom]
+
+### 7. Add Plugins in `~/.zshrc`
+
+```shell
+plugins=(
+    git
+    zsh-autosuggestions
+)
+```
 
 ## Uninstall
 

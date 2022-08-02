@@ -63,11 +63,18 @@ else
 	echo 'powerlevel10k already installed'
 fi
 
+if [ ! -d $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions ]
+then
+  echo 'installing zsh-autosuggestions...'
+  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+else
+	echo 'zsh-autosuggestions already installed'
+fi
+
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 
 # chk this
 chsh -s /bin/zsh
-
 
 install "fig" && brew install fig
 fig
