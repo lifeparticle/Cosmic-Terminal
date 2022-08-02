@@ -111,8 +111,6 @@ plugins=(
     git
     zsh-autosuggestions
 )
-=======
-
 
 ## Uninstall
 
