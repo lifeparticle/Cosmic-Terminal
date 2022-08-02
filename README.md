@@ -111,6 +111,7 @@ plugins=(
     git
     zsh-autosuggestions
 )
+```
 
 ## Uninstall
 
@@ -118,7 +119,7 @@ plugins=(
 
 ```shell
 ./uninstall_cosmic_terminal.sh
-````
+```
 
 or
 
