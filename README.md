@@ -106,7 +106,7 @@ alias gf="git fetch";
 
 ### 7. Add Plugins in `~/.zshrc`
 
-````shell
+```shell
 plugins=(
     git
     zsh-autosuggestions
