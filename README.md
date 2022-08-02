@@ -96,10 +96,13 @@ alias gf="git fetch";
 
 ### 6. Status bar
 
-6.1. iTerm2 > Preferences > Profiles > Session tab -> Status bar enabled [check]
-6.1.1 Configure status bar
-6.1.2 Advanced - Background color -> Use the color picker and choose the backgroung color of the terminal
-6.2. iTerm2 > Preferences > Appearance > Status bar locatio [Bottom]
+- 6.1. iTerm2 > Preferences > Profiles > Session tab -> Status bar enabled [check]
+
+  - 6.1.1 Configure status bar
+
+  - 6.1.2 Advanced - Background color -> Use the color picker and choose the backgroung color of the terminal
+
+- 6.2. iTerm2 > Preferences > Appearance > Status bar locatio [Bottom]
 
 ### 7. Add Plugins in `~/.zshrc`
 
