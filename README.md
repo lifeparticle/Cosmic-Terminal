@@ -75,6 +75,25 @@ function gitall() {
 
 [Source](https://stackoverflow.com/questions/34340575/zsh-alias-with-parameter)
 
+```shell
+gitdeleteall() {
+    if [ "$1" != "" ]
+    then
+        git branch -D "$1"
+        git push origin --delete "$1"
+    else
+        echo "provide branch name"
+    fi
+}
+```
+
+```shell
+alias gcm="git checkout main";
+alias gs="git status";
+alias gp="git pull";
+alias gf="git fetch";
+```
+
 ### 6. Status bar
 
 6.1. iTerm2 > Preferences > Profiles > Session tab -> Status bar enabled [check]
@@ -84,12 +103,13 @@ function gitall() {
 
 ### 7. Add Plugins in `~/.zshrc`
 
-```shell
+````shell
 plugins=(
     git
     zsh-autosuggestions
 )
-```
+=======
+
 
 ## Uninstall
 
@@ -97,7 +117,7 @@ plugins=(
 
 ```shell
 ./uninstall_cosmic_terminal.sh
-```
+````
 
 or
 
