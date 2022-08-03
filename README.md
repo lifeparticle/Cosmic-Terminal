@@ -2,7 +2,9 @@
 
 This script will install [iTerm2](https://github.com/gnachman/iTerm2), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), [Fig](https://fig.io/) and it will download [material-design-colors](https://github.com/MartinSeeler/iterm2-material-design), [powerlevel10k](https://github.com/romkatv/powerlevel10k) and DroidSansMono Nerd Font from [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
-![demo](https://user-images.githubusercontent.com/1612112/58381023-1e660780-7ffc-11e9-9022-da68dbd646f3.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/1612112/182571440-bccff10a-399a-4b8c-bf7f-c8e5dedeba3b.png" />
+</p>
 
 ## Prerequisite
 
