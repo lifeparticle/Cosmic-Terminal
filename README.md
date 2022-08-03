@@ -113,6 +113,18 @@ plugins=(
 )
 ```
 
+## Fig
+
+1. [Settings](https://fig.io/docs/support/settings) `~/.fig/settings.json`
+
+```shell
+{
+	"autocomplete.disable": false,
+	"autocomplete.theme": "dark",
+	"autocomplete.firstTokenCompletion": true
+}
+```
+
 ## Uninstall
 
 1. run
