@@ -96,6 +96,13 @@ alias gp="git pull";
 alias gf="git fetch";
 ```
 
+```shell
+dockernew() {
+    touch Dockerfile
+    touch docker-compose.yml
+}
+```
+
 ### 6. Status bar
 
 - 6.1. iTerm2 > Preferences > Profiles > Session tab -> Status bar enabled [check]
