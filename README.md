@@ -94,6 +94,8 @@ alias gcm="git checkout main";
 alias gs="git status";
 alias gp="git pull";
 alias gf="git fetch";
+
+alias cra="yarn create react-app . --template typescript"
 ```
 
 ```shell
