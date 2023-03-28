@@ -194,6 +194,13 @@ $ source ~/.zshrc
 
 ### [What should/shouldn't go in .zshenv, .zshrc, .zlogin, .zprofile, .zlogout?](https://unix.stackexchange.com/questions/71253/what-should-shouldnt-go-in-zshenv-zshrc-zlogin-zprofile-zlogout#:~:text=zprofile%20is%20meant%20as%20an,the%20setopt%20and%20unsetopt%20commands)
 
+## Other CLI tools
+
+```shell
+brew install rich-cli
+rich README.md
+```
+
 ## Bug Reports and Feature Requests
 
 Please create an issue with as much information you can. Thank you.
