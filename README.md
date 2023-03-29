@@ -136,6 +136,10 @@ plugins=(
 }
 ```
 
+2. Chat GPT
+
+https://twitter.com/fig/status/1639299811450171392
+
 ## Uninstall
 
 1. run
